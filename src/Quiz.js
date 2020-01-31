@@ -5,7 +5,10 @@ let quizData = require('./quiz_data.json')
 
 class Quiz extends Component{
 	render(){
-		return ( <div><div className="QuizQuestion"> {quizData.quiz_questions[0].instruction_text}</div></div> )
+		return
+		(<div><div className="QuizQuestion"> {quizData.quiz_questions[0]
+			.instruction_text}</div></div>
+		)
 	}
 	
 	constructor(props){
